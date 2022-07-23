@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/tina-dev/static/css/main.052adc03.css",
+    "main.js": "/tina-dev/static/js/main.25b68bbe.js",
+    "static/js/564.048c74ee.chunk.js": "/tina-dev/static/js/564.048c74ee.chunk.js",
+    "static/js/787.92acc52e.chunk.js": "/tina-dev/static/js/787.92acc52e.chunk.js",
+    "static/js/979.fd121376.chunk.js": "/tina-dev/static/js/979.fd121376.chunk.js",
+    "index.html": "/tina-dev/index.html",
+    "main.052adc03.css.map": "/tina-dev/static/css/main.052adc03.css.map",
+    "main.25b68bbe.js.map": "/tina-dev/static/js/main.25b68bbe.js.map",
+    "564.048c74ee.chunk.js.map": "/tina-dev/static/js/564.048c74ee.chunk.js.map",
+    "787.92acc52e.chunk.js.map": "/tina-dev/static/js/787.92acc52e.chunk.js.map",
+    "979.fd121376.chunk.js.map": "/tina-dev/static/js/979.fd121376.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.052adc03.css",
+    "static/js/main.25b68bbe.js"
+  ]
+}
