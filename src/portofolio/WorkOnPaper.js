@@ -4,6 +4,7 @@ import {useState} from 'react';
 export default function Paintings ({images}) {
   const filterByType =  images.filter((img) => img.type === 'wop');
   const halfLength = filterByType.length / 2;
+  const class2 = 'container-popup';
   
   const [isShown, setIsShown] = useState(false);
   const [clickImg, setclickImg] = useState({})
@@ -17,11 +18,11 @@ export default function Paintings ({images}) {
     return( 
         <div className='container'>
           {isShown && (
-            <div className="container" className="container-popup">
-              <div className="row">
+            <div className={`container ${class2}`}>
+              <div className='row'>
                   <img src={clickImg.location} alt='' className='img-fluid'/>
               </div>
-              <div className="row" className="fluid">
+              <div className='row-fluid'>
                 {clickImg.title}-{clickImg.year}-{clickImg.technique} 
               </div>
             </div>
@@ -32,7 +33,7 @@ export default function Paintings ({images}) {
             {filterByType.slice(0,halfLength).map(image => (
             <div key={image.id} className='container-paintings'>
             <img src={image.location} alt='' onClick={(event) => handlerClick(event, image)} className='img-fluid'/>
-            <div className="row" className="fluid">
+            <div className='row-fluid'>
               {image.title}-{image.year}-{image.technique} 
             </div>
             </div>
@@ -43,7 +44,7 @@ export default function Paintings ({images}) {
             {filterByType.slice(halfLength,filterByType.length).map(image => (
             <div key={image.id} className='container-paintings'>
             <img src={image.location} alt='' className='img-fluid' onClick={(event) => handlerClick(event, image)}/>
-            <div className="row" className="fluid">
+            <div className='row-fluid'>
               {image.title}-{image.year}-{image.technique} 
             </div>
             </div>
