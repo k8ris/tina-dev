@@ -15,6 +15,8 @@ export default function Bio ({images}) {
         tinolinaradulovic@gmail.com<br/>
         <BsInstagram color={'grey'} size={18} /> tinolina_art <br/>
         +381621803862
+        <br/>
+        <br/>
         </div>
         <div className="col-md-6 col-sm-12">
           <img src ={locationBioImage} alt="slika" className='img-fluid mx-auto d-block'/>
