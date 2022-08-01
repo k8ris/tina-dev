@@ -9,7 +9,6 @@ export default function Paintings ({images}) {
   const [isShown, setIsShown] = useState(false);
   const [clickImg, setclickImg] = useState({})
   const handlerClick = (e,source)=> {
-        // setIsShown(current => !current);
         setIsShown(true);
         setclickImg(source);
         window.scrollTo(0, 0);

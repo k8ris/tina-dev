@@ -15,17 +15,18 @@ export default function App() {
   artPieces.map(img => img.locationFullSize = "./img/"+img.locationFullSize);
   
   const homeImage = paintings[Math.floor(Math.random()*paintings.length)];
-
+  // basename={window.location.pathname || ''}
   return (
-    <BrowserRouter basename={window.location.pathname || ''}>     
+    <BrowserRouter >     
       <Routes>
         <Route path="/" element={<Nav />}>
           <Route index element={<Home images={homeImage.location} />}/>
+          <Route path="home" element={<Home images={homeImage.location}/>} />
           <Route path="paintings" element={<Paintings images={artPieces}/>} />
           <Route path="work-on-paper" element={<WorkOnPaper images={artPieces} />} />
           <Route path="ceramics" element={<Ceramics images={artPieces} />} />
           <Route path="bio" element={<Bio images={artPieces}/>} />
-          <Route path="shop" element={<Shop/>} />
+          {/* <Route path="shop" element={<Shop/>} /> */}
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

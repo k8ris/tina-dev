@@ -11,7 +11,7 @@ const Nav = () => {
         <li><Link to="/work-on-paper" className='layout-link'>WorkOnPaper</Link></li>
         <li><Link to="/ceramics" className='layout-link'>Ceramics</Link> </li>
         <li><Link to="/bio" className='layout-link'>Bio</Link></li>
-        <li><Link to="/shop" className='layout-link'>Shop</Link></li>
+      <li><a href= "https://eae86d.myshopify.com/" target="_blank" className="layout-link">Shop</a></li>
       </ul>
       </nav>
       <Outlet />
