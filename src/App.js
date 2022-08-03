@@ -6,7 +6,6 @@ import Ceramics from "./portofolio/Ceramics";
 import Bio from "./portofolio/Bio";
 import Nav from "./portofolio/Nav";
 import NoPage from "./portofolio/NoPage";
-import Shop from "./shop/Shop";
 
 export default function App() {
   const artPieces = require('./portofolio/art')();
@@ -17,7 +16,7 @@ export default function App() {
   const homeImage = paintings[Math.floor(Math.random()*paintings.length)];
   // basename={window.location.pathname || ''}
   return (
-    <BrowserRouter >     
+    <BrowserRouter basename={window.location.pathname || ''} >     
       <Routes>
         <Route path="/" element={<Nav />}>
           <Route index element={<Home images={homeImage.location} />}/>

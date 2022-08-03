@@ -19,11 +19,11 @@ nav {
 }
 .layout-link:hover{
     text-decoration: underline;
-    color: rgba(94, 55, 27, 0.73);
+    color: rgb(21, 244, 238);
 }
-.home-img{
+/* .home-img{
     border: 1px solid rgba(96, 175, 171, 0.788);
-}
+} */
 /* .title-paintings{
     text-align: center;
     margin-top: 0.5em;
@@ -59,9 +59,11 @@ nav {
 .card {
     border: 0px;
 }
-/* .bioText{
-    margin-bottom: 20%;
-} */
-/* .imgBio{
-    width: 100px;
-} */
+a.instagram {
+    color: black;
+    vertical-align: middle;
+    padding:0 5px 0 0;
+}
+a.social:hover {
+    color: rgb(21, 244, 238);
+}

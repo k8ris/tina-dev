@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsInstagram } from "react-icons/bs";
+import SocialFollow from "./SocialFollow";
 
 export default function Bio ({images}) {
   const locationBioImage= images.filter((image) => image.type === 'bio-image' ? image : '')[0].location;
@@ -13,7 +13,7 @@ export default function Bio ({images}) {
         <br/>
         <br/>
         tinolinaradulovic@gmail.com<br/>
-        <BsInstagram color={'grey'} size={18} /> tinolina_art <br/>
+        <SocialFollow />
         +381621803862
         <br/>
         <br/>
